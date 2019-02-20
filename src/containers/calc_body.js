@@ -17,7 +17,7 @@ class CalcBody extends Component {
   updateDisplay(index) {
     const selectedButton = this.state.digits[index];
     this.setState( {
-      display: index
+      display: selectedButton
     });
   };
 
@@ -25,6 +25,7 @@ class CalcBody extends Component {
     return (
       <div className="calc-body">
       <h1>Digital Calculator</h1>
+      <hr />
       <ButtonArea
         digits={this.state.digits} operands={this.state.operands}
         display={this.state.display} updateDisplay={this.updateDisplay} />
