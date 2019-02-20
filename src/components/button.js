@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 
 const Button = (props) =>  {
 
-  return (
-    <h1>button </h1>
-  );
+  const handleClick = () => {
+    console.log("Button pressed: ", (props.value));
+    props.updateDisplay(props.index);
+    console.log("HELLO");
+    // props.playMove(props.index);
+  };
 
-}
+  return (
+    <button onClick={handleClick} className="button">{props.value}</button>
+  );
+};
 
 export default Button;
