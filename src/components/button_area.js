@@ -6,9 +6,9 @@ const ButtonArea = ({digits, operands, display}) => {
   return(
     <div>
       <div className="output-display-area">
-        <p>Display: {display}</p>
-        <hr />
+        <p>{display}</p>
       </div>
+      <hr />
       <div className="row">
         <div className="column">
         <p>Digits: </p>
@@ -33,7 +33,7 @@ const ButtonArea = ({digits, operands, display}) => {
       </div>
       <div className="operand-button-area">
         <p>Operands: </p>
-          <Button name="+" value={operands[0]} index={operands[0]}/>
+          <Button name="+" value={operands[0]} index={operands[10]}/>
           <Button name="-" value={operands[1]} index={operands[1]}/>
           <Button name="*" value={operands[2]} index={operands[2]}/>
           <Button name="/" value={operands[3]} index={operands[3]}/>

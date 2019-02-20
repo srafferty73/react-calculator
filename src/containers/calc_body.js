@@ -15,10 +15,11 @@ class CalcBody extends Component {
   };
 
   updateDisplay(index) {
+    const selectedButton = this.state.digits[index];
     this.setState( {
       display: index
     });
-  }
+  };
 
   render() {
     return (
