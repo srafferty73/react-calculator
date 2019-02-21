@@ -32,7 +32,7 @@ const ButtonArea = ({digits, operands, display, updateDisplay}) => {
         <hr />
       </div>
       <div className="operand-button-area">
-        <p>Operands: </p>
+          <hr />
           <Button name="+" value={operands[0]} index={operands[0]} updateDisplay={updateDisplay}/>
           <Button name="-" value={operands[1]} index={operands[1]} updateDisplay={updateDisplay}/>
           <Button name="*" value={operands[2]} index={operands[2]} updateDisplay={updateDisplay}/>

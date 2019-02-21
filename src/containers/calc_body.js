@@ -15,9 +15,16 @@ class CalcBody extends Component {
   };
 
   updateDisplay(index) {
-    const selectedButton = this.state.digits[index];
+    var selectedDigit = this.state.digits[index];
+    var currentDisplay = this.state.display;
+    console.log("SELECTED DIGIT :", selectedDigit);
+    console.log("CURRENT :", currentDisplay);
+    selectedDigit = currentDisplay + selectedDigit;
+    // selectedDigit = currentDisplay - selectedDigit;
+    // selectedDigit = selectedDigit * currentDisplay;
+    // selectedDigit = selectedDigit / currentDisplay;
     this.setState( {
-      display: selectedButton
+      display: selectedDigit
     });
   };
 
